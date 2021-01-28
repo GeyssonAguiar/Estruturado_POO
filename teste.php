@@ -1,6 +1,9 @@
 <?php 
 
-require_once 'classes/Cidade.php';
+$teste = parse_ini_file('config/livro.ini');
+foreach($teste as $linha) {
+    print($linha . '<br>');
+}
 
-$a = Cidade::all();
-print_r($a);
+
+
